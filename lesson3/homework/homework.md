@@ -1,7 +1,7 @@
-Homework. SQL and Relational DBMS. Introduction to PostgreSQL
+Homework. Installing PostgreSQL in Docker
 =================
 
-- [Homework. SQL and Relational DBMS. Introduction to PostgreSQL](#homework-sql-and-relational-dbms-introduction-to-postgresql)
+- [Homework. Installing PostgreSQL in Docker](#homework-installing-postgresql-in-docker)
   - [Описание](#описание)
     - [Цель](#цель)
   - [Задание и выполнение](#задание-и-выполнение)
