@@ -27,6 +27,13 @@ resource "yandex_compute_instance" "vm-1" {
     }
   }
 
+  dynamic "secondary_disk" {
+    for_each = length(var.secondary_disks_ids) > 0 ? var.secondary_disks_ids : []
+    content {
+      disk_id = secondary_disk.value
+    }
+  }
+
   network_interface {
     subnet_id = var.subnet_id
     nat       = var.nat

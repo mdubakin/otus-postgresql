@@ -4,6 +4,11 @@ variable "boot_disk_size" {
   default     = 10
 }
 
+variable "secondary_disks_ids" {
+  type    = list(string)
+  default = []
+}
+
 variable "cpu_cores" {
   type        = number
   description = "VCPU Cores"
