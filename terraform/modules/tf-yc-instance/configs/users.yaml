@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: student
+    groups: sudo
+    shell: /bin/bash
+    sudo: "ALL=(ALL) NOPASSWD:ALL"
+    ssh-authorized-keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCbtvMabwBJVxw9Sd4/FDAb3hTu4F4LD0suAeW7NUj/I1bQTO/8P40miWikmqVTwoszpfsmm4K0yFSXsqu3pP7w8Sg2nxdARhXvslX6uBZ5rX+u7JsOFLNS6hMUGGpUkB48E6JkML9UBqYB5fcxKNpsKf55NGRfZfm6FAV/uP8EHPiTfxlKui9sYEPlJ+iC81mmm+5l3NzmN2UHhwC66PwdrsiRsZQo8wxP44JECLRp4jInfVp6hPPHGeaCaknCfAeIBL/yPsVkDzwHtSKZBvqhAfZ+iNLcjkTswEUIUXO6CsYTGPh45w5qKOq7gC6P7vfYwAz6jhshEG9PrVDGlytfrWfwMsq5IDRd80om0YL33KVHrBJUndU1lzi/z+IfUGcehvsv1qd2X0pqdmvVL9BYSPxrY28bdIVrg4zYKVK7wJ3mCHg0ShJuVNH4k+KCc+1IUrtgFE3fpNnGoG7F7/9erg+D2WJtFlMPwM6BUifT6Uw9+eFrHdG5i5P2HWoe9MyFttTUXLg1foVvpOIw2duE3bZhNAVBHxR8Vt+QFayRR5471I+Yi0tcvy8tjmFmKwA/3w388R4/QZXdEXxPzLR8GHpBvuPoe5ljsuMdXftBDzsJniYp6UUiLrkWEe3AUtyni1iHZMxA+DTlztxjOJO8gWs8rZEomZT/XWKDwktTAQ== maximdubakin@i112577770"
