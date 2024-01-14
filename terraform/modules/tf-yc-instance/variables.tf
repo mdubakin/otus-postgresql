@@ -4,6 +4,11 @@ variable "boot_disk_size" {
   default     = 10
 }
 
+variable "allow_stopping_for_update" {
+  type    = bool
+  default = true
+}
+
 variable "secondary_disks_ids" {
   type    = list(string)
   default = []

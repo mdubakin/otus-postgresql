@@ -4,7 +4,8 @@ module "compute_instance" {
   name                = var.name
   zone                = var.zone
   os_family           = var.os_family
-  boot_disk_size      = 20
+  memory              = 4
+  boot_disk_size      = 40
   secondary_disks_ids = module.disk.ids
 }
 
