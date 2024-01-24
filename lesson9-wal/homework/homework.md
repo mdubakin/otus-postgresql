@@ -374,6 +374,10 @@ postgres@fhmodlacmieaul194lf0:~/15$ echo foobar >> /var/lib/postgresql/15/extra/
 > Включите кластер и сделайте выборку из таблицы. Что и почему произошло? как проигнорировать ошибку и продолжить работу?
 
 ```bash
+# Включаем проверку хэшсуммы
+postgres@fhmodlacmieaul194lf0:~$ /usr/lib/postgresql/15/bin/pg_checksums -e -D /var/lib/postgresql/15/extra
+pg_checksums: error: could not read block 1 in file "/var/lib/postgresql/15/extra/base/5/16387": read 21 of 8192
+
 # Запускаем кластер
 postgres@fhmodlacmieaul194lf0:~/15$ /usr/lib/postgresql/15/bin/pg_ctl -D /var/lib/postgresql/15/extra start
 waiting for server to start....2024-01-19 05:35:48.394 UTC [12619] LOG:  starting PostgreSQL 15.5 (Ubuntu 15.5-1.pgdg22.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, 64-bit
