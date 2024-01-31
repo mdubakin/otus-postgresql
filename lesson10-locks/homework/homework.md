@@ -27,7 +27,7 @@ Homework. Locks
 > Настройте сервер так, чтобы в журнал сообщений сбрасывалась информация о блокировках, удерживаемых более 200 миллисекунд.
 
 ```sql
--- Смотрим текущее значение параметра lock_timeout и deadlock_timeout
+-- Смотрим текущее значение параметра log_lock_waits и deadlock_timeout
 postgres=# SHOW log_lock_waits;
  log_lock_waits 
 ----------------
