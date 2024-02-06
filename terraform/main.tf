@@ -9,6 +9,19 @@ module "compute_instance" {
   secondary_disks_ids = module.disk.ids
 }
 
+module "compute_instance_replication" {
+  count          = 4
+  source         = "./modules/tf-yc-instance"
+  subnet_id      = module.network.yandex_vpc_subnets[var.zone]
+  name           = "pgsql-repl-${count.index}"
+  zone           = var.zone
+  os_family      = var.os_family
+  cpu_cores      = 2
+  memory         = 4
+  boot_disk_size = 20
+  preemptible    = true
+}
+
 module "network" {
   source = "./modules/tf-yc-network"
 }

@@ -3,3 +3,5 @@
 .terraform.lock.hcl
 **/.terraform/**
 homework-tpl.md
+node_modules
+package*.json
